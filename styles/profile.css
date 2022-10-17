@@ -1,1 +1,110 @@
-/***Profile***//*# sourceMappingURL=profile.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d7e1ec;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.caps {
+  text-transform: capitalize;
+  font-family: "K2D", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.fa {
+  font-size: 1.3rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 3rem;
+  border: 1px solid #4078c0;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.fa:hover {
+  color: #4078c0;
+  border: 0.2rem solid #5585b5;
+  opacity: 1;
+  transition: 5ms;
+}
+
+.fa-linkedin {
+  color: #00a0dc;
+}
+
+.fa-github {
+  color: #4078c0;
+}
+
+.fa-codepen {
+  color: black;
+}
+
+.container {
+  height: 80%;
+  width: 80%;
+  border-radius: 5%;
+  background-color: #bbe4e9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 1rem;
+  padding: 2rem;
+  margin: auto;
+}
+.container img {
+  max-width: 12rem;
+  height: auto;
+  border-radius: 5%;
+  border: 0.1rem solid #5585b5;
+}
+.container .photo-contact-wrapper {
+  width: 50%;
+  padding: 2rem;
+}
+.container .photo-contact-wrapper .photo {
+  flex-wrap: wrap;
+}
+.container .photo-contact-wrapper .contact {
+  flex-wrap: wrap;
+}
+.container .text {
+  width: 50%;
+  margin-right: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  min-height: 0;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+    height: 100%;
+    display: block;
+    text-align: justify;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  .container .photo-contact-wrapper {
+    text-align: center;
+  }
+}/*# sourceMappingURL=profile.css.map */
