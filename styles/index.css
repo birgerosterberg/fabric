@@ -1,0 +1,84 @@
+body { 
+    max-width: 1440px;
+    width: 100%;
+    min-height: 1024;
+    margin: auto;
+    background-color: #F5F5F5;
+    font-family: 'K2D', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+    list-style-type: none;
+    padding: 10px;
+}
+li :hover {
+    color: #5585B5;
+}
+
+/*CSS FOR NAVBAR*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav__links {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*CSS for cards*/
+img {
+    width: 131px;
+    height: 131px;
+}
+
+h3 {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+        .card1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #5585B5;
+            height: 330px;
+            width: 255px;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .card__image {
+            width: 131px;
+            height: 131px;
+        }
+
+        .card__icons {
+            margin: 10px;
+        }
+        .card__name {
+            color: #ffff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .card__jobtitle { 
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
