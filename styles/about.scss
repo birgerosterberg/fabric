@@ -1,4 +1,4 @@
-@import url(navbar.scss);
+@import url(/styles/navbar.css);
 
 
 body { 
@@ -19,12 +19,13 @@ li :hover {
     color: #5585B5;
 }
 
-/*_______________CSS FOR NAVBAR______________*/
+/*_______________CSS FOR NAVBAR______________
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .nav__links {
@@ -33,7 +34,7 @@ li :hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
+}_________________________*/
 
 
 /*______________Styling for cards______________*/
@@ -52,6 +53,7 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
 }
 
         .card1 {
