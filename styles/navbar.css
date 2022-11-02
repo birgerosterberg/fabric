@@ -22,8 +22,8 @@ nav {
   display: flex;
   width: 100%;
   height: 83px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(63, 164, 192, 0.7411764706)), to(rgba(36, 37, 42, 0.6705882353)));
-  background-image: linear-gradient(rgba(63, 164, 192, 0.7411764706), rgba(36, 37, 42, 0.6705882353));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.7411764706)), to(#fff));
+  background-image: linear-gradient(rgba(77, 77, 77, 0.7411764706), #fff);
 }
 
 nav ul {
@@ -85,15 +85,9 @@ nav ul li ul li a:hover {
 }
 
 /* Footer */
-.container {
-  width: 100%;
-  height: 650px;
-  color: #fff;
-}
-
 .footer {
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 93, 101, 0.6705882353)), to(rgba(63, 164, 192, 0.7411764706)));
-  background-image: linear-gradient(rgba(91, 93, 101, 0.6705882353), rgba(63, 164, 192, 0.7411764706));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(77, 77, 77, 0.7411764706)));
+  background-image: linear-gradient(#fff, rgba(77, 77, 77, 0.7411764706));
 }

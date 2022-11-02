@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05341947df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="../html/navbar.html">
+    <title>Contact</title>
 </head>
 <body>
-    
+    <div class="navbar">
+        <nav>
+            <li><a href="/index.html"><img class="logo" src="/Assets/fabric2.png" alt="logo"></a></li>
+            <ul>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="#">- UX/UI designer -</a></li>
+                        <li><a href="#">- Cyber security master -</a></li>
+                        <li><a href="#">- Backend developer guru -</a></li>
+                        <li><a href="#">- Graphic designer -</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="../pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">Video production</a></li>
+                        <li><a href="#">Web development</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="container-form">
+        <form action="">
+            <div class="form-area">
+                <label for="name" class="label">FULL NAME</label>
+                <input type="text" name="name" id="name" class="input-field" placeholder="Your Name">
+            <div class="form-area1">
+                <label for="email" class="label">EMAIL</label>
+                <input type="email" name="email" id="email" class="input-field" placeholder="Your Email" required autofocus>
+
+                <label for="name" class="label">MESSAGE REGARDING</label>
+
+                <select name="languages" class="dropdown-form">
+                    <option value="Book a meeting">Book a meeting</option>
+                    <option value="Get in touch">Get in touch</option>
+
+                    <option value="Pricing">Pricing</option>
+                    <option value="Service">Service</option>
+                </select>              
+            </div>
+            
+                <label for="name" class="label">MESSAGE</label>
+                <input type="text" name="name" id="name" class="input-field" placeholder="Your Message">
+
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="footer">
+        <nav class="footer">
+            <li><a href="/index.html"><img class="logo" src="/Assets/fabric2.png" alt="logo"></a></li>
+            <ul>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/help.html">Help</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
