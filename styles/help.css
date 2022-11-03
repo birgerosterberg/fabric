@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "K2D", sans-serif;
-  list-style-type: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #Ffffff), color-stop(50%, #4D4AD6));
+  background: linear-gradient(180deg, #Ffffff 50%, #4D4AD6 50%);
 }
 
 .container {
@@ -134,7 +135,7 @@ li a:hover {
   border: none;
   border-radius: 10px;
   background-color: #808080;
-  background: linear-gradient(40deg, transparent, #689bd6);
+  background: linear-gradient(40deg, #fff, #256ba5);
   -webkit-animation: animate1 1s linear infinite;
           animation: animate1 1s linear infinite;
 }
