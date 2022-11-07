@@ -1,132 +1,138 @@
-
+@import "navbar.scss";
 * {
-    box-sizing: border-box;}
-body {
-    background-color: #bbe4e9;
-   
-    font-size: 1rem;
-    font-family:  'Nunito', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+  box-sizing: border-box;
+}
+.profile-big-container {
+  background-color: #bbe4e9;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .profile-wrapper {
-    background-color:#d7e1ec;
-    padding:3rem
+  background-color: #d7e1ec;
+  padding: 1rem;
+  margin-inline: 10%;
 }
 .caps {
-    text-transform:capitalize;
-    font-family: 'K2D', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
+  text-transform: capitalize;
+  font-family: "K2D", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
 }
 h2 {
-    font-family: 'K2D', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    
-
+  font-family: "K2D", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .line-through {
-    text-decoration: line-through;
-    color: red;
-
+  text-decoration: line-through;
+  color: red;
 }
-.svg-image{
-    width: 30vw;
-    height: .1rem;
+.svg-image {
+  width: 30vw;
+  height: 0.1rem;
+}
+#email {
+  color: yellow;
+  text-decoration: none;
 }
 .fa {
-    font-size: 1.2rem;
-    height: 2.3rem;
-    width: 2.3rem;
-    background-color: white;
-    border-radius: 2.3rem;
-    border: 1px solid #4078c0;
-    cursor: pointer;
-    padding: .3rem;
+  font-size: 1.2rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  background-color: rgb(251, 242, 245);
+  border-radius: 2.3rem;
+  border: 1px solid #4078c0;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 200ms ease-in-out;
 }
+
 .fa:hover {
-    color: #4078c0;
-    border: .2rem solid#5585b5;
-    opacity: 1;
-    transition: 5ms;
-    
+  color: #4078c0;
+  border: 0.2rem solid#5585b5;
+  opacity: 1;
 }
 
 .fa-linkedin {
-    color: #00a0dc;
-
+  color: #00a0dc;
 }
 .fa-github {
-    color: #4078c0 ;
+  color: #4078c0;
 }
 .fa-codepen {
-    color: black;
+  color: black;
 }
 .profile-wrapper {
-    height: 70%;
-    width: 70%;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  .profile-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+  .profile-text {
+    padding: 1rem;
+    text-align: justify;
+  }
+  img {
+    max-width: 12rem;
+    height: auto;
+    border-radius: 5%;
+    border: 0.1rem solid#5585b5;
+  }
+  .photo-contact-wrapper {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    .photo {
+      flex-wrap: wrap;
+    }
+    .profile-contact {
+      flex-wrap: wrap;
+    }
+  }
+  p {
+    line-height: 2em;
+  }
+
+  .text {
+    width: 50%;
+    margin-right: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+    min-height: 0;
+    border: 1px solid #00a0dc;
+    text-align: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-wrapper {
+    height: 100%;
+    width: 100%;
+    .photo-contact-wrapper {
+      width: 90%;
+    }
     .profile-container {
-        display: flex;
+      display: block;
     }
-    .photo-contact-wrapper {
-        text-align: center;
+    .profile-contact {
     }
-    .profile-text {
-        padding: 2rem;
+    p {
+      line-height: normal;
     }
-    img {
-        max-width: 12rem;
-        height: auto;
-        border-radius: 5%;
-        border: .1rem solid#5585b5;
-    }
-    .photo-contact-wrapper {
-      width: 50%;
-      padding: 2rem;
-      
-
-      .photo {
-       
-        flex-wrap: wrap;
-      }
-      .profile-contact {
-      
-        flex-wrap: wrap;
-      }
-
-    }
-    .text {
-        width: 50%;
-        margin-right: auto;
-        padding: 2rem;
-        flex-wrap: wrap;
-        min-height: 0;
-        border: 1px solid #00a0dc;
-        text-align: start;
-    }
-   
+  }
 }
-@media (max-width: 800px) {
-    .container {
-        width: 80%;
-        height: 100%;
-        display: block;
-        text-align: justify;
-        gap: .5rem;
-        padding: 0;
-        margin: 0;
-        .photo-contact-wrapper {
-            text-align: center;
-        }
-    }
-}
+@import "footer.scss";

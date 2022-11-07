@@ -1,13 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "K2D", sans-serif;
+  list-style-type: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 83px;
+  background-image: linear-gradient(rgba(77, 77, 77, 0.7411764706), #fff);
+}
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+}
+
+nav ul li:hover {
+  background-color: #5e5e5e;
+  border-radius: 10px;
+}
+
+nav ul li a {
+  display: block;
+  font-family: "K2D";
+  /* color: #222; */
+  color: #000;
+  font-size: 20px;
+  padding: 22px 14px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #03b2d5;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #929292;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+nav ul li:hover ul {
+  display: block;
+  color: #00d5ff;
+  transition: 0.1s;
+}
+
+nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+}
+
+nav ul li ul li a {
+  padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+  background-color: rgba(129, 129, 129, 0.631372549);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#fff, rgba(77, 77, 77, 0.7411764706));
+}
+
 * {
   box-sizing: border-box;
 }
 
-body {
+.profile-big-container {
   background-color: #bbe4e9;
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
   width: 100vw;
   height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +107,8 @@ body {
 
 .profile-wrapper {
   background-color: #d7e1ec;
-  padding: 3rem;
+  padding: 1rem;
+  margin-inline: 10%;
 }
 
 .caps {
@@ -43,22 +135,27 @@ h2 {
   height: 0.1rem;
 }
 
+#email {
+  color: yellow;
+  text-decoration: none;
+}
+
 .fa {
   font-size: 1.2rem;
   height: 2.3rem;
   width: 2.3rem;
-  background-color: white;
+  background-color: rgb(251, 242, 245);
   border-radius: 2.3rem;
   border: 1px solid #4078c0;
   cursor: pointer;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  transition: 200ms ease-in-out;
 }
 
 .fa:hover {
   color: #4078c0;
   border: 0.2rem solid #5585b5;
   opacity: 1;
-  transition: 5ms;
 }
 
 .fa-linkedin {
@@ -75,19 +172,18 @@ h2 {
 
 .profile-wrapper {
   height: 70%;
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 .profile-wrapper .profile-container {
   display: flex;
 }
-.profile-wrapper .photo-contact-wrapper {
-  text-align: center;
-}
 .profile-wrapper .profile-text {
-  padding: 2rem;
+  padding: 1rem;
+  text-align: justify;
 }
 .profile-wrapper img {
   max-width: 12rem;
@@ -97,13 +193,17 @@ h2 {
 }
 .profile-wrapper .photo-contact-wrapper {
   width: 50%;
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 .profile-wrapper .photo-contact-wrapper .photo {
   flex-wrap: wrap;
 }
 .profile-wrapper .photo-contact-wrapper .profile-contact {
   flex-wrap: wrap;
+}
+.profile-wrapper p {
+  line-height: 2em;
 }
 .profile-wrapper .text {
   width: 50%;
@@ -115,17 +215,18 @@ h2 {
   text-align: start;
 }
 
-@media (max-width: 800px) {
-  .container {
-    width: 80%;
+@media (max-width: 700px) {
+  .profile-wrapper {
     height: 100%;
-    display: block;
-    text-align: justify;
-    gap: 0.5rem;
-    padding: 0;
-    margin: 0;
+    width: 100%;
   }
-  .container .photo-contact-wrapper {
-    text-align: center;
+  .profile-wrapper .photo-contact-wrapper {
+    width: 90%;
+  }
+  .profile-wrapper .profile-container {
+    display: block;
+  }
+  .profile-wrapper p {
+    line-height: normal;
   }
 }/*# sourceMappingURL=profile.css.map */
