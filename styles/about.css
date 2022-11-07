@@ -200,12 +200,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  padding: 30px 15px;
+  padding: 5px 5px;
+  padding-top: 100px;
 }
 
 .row {
-  max-width: 1024px;
-  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+  margin: 5px;
 }
 
 *, *:before, *:after {
@@ -241,46 +243,32 @@ h1, h2, h3, h4, h5, h6 {
 /*fancy card styling*/
 .fancy-card {
   background: rgb(158, 203, 255);
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   float: left;
+  position: relative;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
           box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
-  /*remove
-  min-height: 300px;*/
   background-size: cover;
   background-position: center center;
-  margin: 20px;
+  margin: 5px;
   margin-bottom: 30px;
   /*New code added*/
-  width: 600px;
-  height: 400px;
+  max-width: 270px;
+  width: 100%;
+  min-height: 350px;
   border-radius: 8px;
-}
-
-.fancy-card.one {
-  background-image: url("https://docs.google.com/uc?id=0B7UPM0QugWUjQVlzT0VpTmdYbG8");
-}
-
-.fancy-card.two {
-  background-image: url("https://docs.google.com/uc?id=0B7UPM0QugWUjbkR2Um9YZ2pnNzQ");
-}
-
-.fancy-card.three {
-  background-image: url("https://docs.google.com/uc?id=0B7UPM0QugWUjNVVVay1vYkRIV1E");
-}
-
-.fancy-card.four {
-  background-image: url("https://docs.google.com/uc?id=0B7UPM0QugWUjNVVVay1vYkRIV1E");
 }
 
 .fancy-card .bg-overlay {
@@ -297,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fancy-card .content {
   padding: 30px 40px;
-  color: rgb(103, 174, 255);
+  color: #fff;
   text-align: center;
   position: absolute;
   top: 0px;
@@ -319,7 +307,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fancy-card .content .primary {
+  color: #fff;
   text-transform: uppercase;
+  text-align: center;
   width: 100%;
   -webkit-transition: all 250ms ease-out 200ms;
   transition: all 250ms ease-out 200ms;
@@ -329,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fancy-card .content .secondary {
+  color: black;
   position: absolute;
   opacity: 0;
   left: 0px;
@@ -336,18 +327,28 @@ h1, h2, h3, h4, h5, h6 {
           transform: translate3d(0px, 30px, 1px);
   -webkit-transition: all 200ms linear 0ms;
   transition: all 200ms linear 0ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 35px;
   padding-right: 35px;
 }
 
+/*
 .fancy-card {
+  display: flex;
+  margin: 12px auto;
+}*/
+/*think this is the relavent code for button icon animations*/
+.wrapperbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 12px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/*think this is the relavent code for button icon animations*/
 .button {
   height: 40px;
   width: 40px;
@@ -405,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #6e5494;
 }
 
-.button {
+.button--styles {
   font-size: 16px;
   font-weight: 500;
   line-height: 40px;
@@ -423,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button .icon i {
+  color: black;
   font-size: 20px;
   line-height: 40px;
 }
@@ -433,86 +435,81 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 
-/*horizontal border elements (top & bottom)*/
-.fancy-card .v-border {
+/*horizontal border elements (top & bottom)
+.fancy-card .v-border{
   position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
 }
-
 .fancy-card .v-border:before,
-.fancy-card .v-border:after {
+.fancy-card .v-border:after{
   width: 0%;
   height: 1px;
   left: 50%;
-  -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
   background: #fff;
 }
-
-.fancy-card .v-border:before {
-  content: "";
+.fancy-card .v-border:before{
+  content: '';
   top: 10%;
   position: absolute;
 }
-
-.fancy-card .v-border:after {
-  content: "";
+.fancy-card .v-border:after{
+  content: '';
   bottom: 10%;
   position: absolute;
 }
 
-/*horizontal elements (left & right)*/
-.fancy-card .h-border {
+/*horizontal border elements (left & right)
+
+
+.fancy-card .h-border{
   position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
 }
-
 .fancy-card .h-border:before,
-.fancy-card .h-border:after {
+.fancy-card .h-border:after{
   height: 0%;
   top: 50%;
   width: 1px;
-  -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
   background: #fff;
 }
-
-.fancy-card .h-border:before {
-  content: "";
+.fancy-card .h-border:before{
+  content: '';
   left: 10%;
   height: 0%;
   position: absolute;
 }
-
-.fancy-card .h-border:after {
-  content: "";
+.fancy-card .h-border:after{
+  content: '';
   right: 10%;
   position: absolute;
 }
 
-/*hover states for interactivity*/
+
+
+/*hover states for interactivity
 .fancy-card:active .v-border:before,
 .fancy-card:active .v-border:after,
 .fancy-card:hover .v-border:before,
-.fancy-card:hover .v-border:after {
+.fancy-card:hover .v-border:after{
   width: 90%;
   left: 5%;
 }
-
 .fancy-card:active .h-border:before,
 .fancy-card:active .h-border:after,
 .fancy-card:hover .h-border:before,
-.fancy-card:hover .h-border:after {
+.fancy-card:hover .h-border:after{
   height: 90%;
   top: 5%;
 }
-
+*/
 /*hovering over card, shadow effect*/
 .fancy-card:active,
 .fancy-card:hover {
