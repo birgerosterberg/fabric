@@ -273,65 +273,69 @@ h3 {
   }
 
 
-                        /*think this is the relavent code for button icon animations*/
+    /*think this is the relavent code for button icon animations*/
 
-        .button {
-            height: 40px;
-            width: 40px;
-            background-color: white;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 10px 10px  rgba(0,0,0,0.1);
-            float: left;
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .button span {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 40px;
-            margin-left: 10px;
-        }
-
-        .button:hover {
-            width: 100px;
-        }
-
-        .button:nth-child(1):hover .icon{ background: #4267B2;}
-        .button:nth-child(2):hover .icon{ background: #e1306c;}
-        .button:nth-child(3):hover .icon{ background: #4b7de1;}
-        .button:nth-child(4):hover .icon{ background: #6e5494;}
-
-        .button:nth-child(1) span {color:#4267B2;}
-        .button:nth-child(2) span { color: #e1306c;}
-        .button:nth-child(3) span { color: #4b7de1;}
-        .button:nth-child(4) span { color: #6e5494;}
-
-        .button  {
-            font-family: 'K2D', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 40px;
-            margin-left: 10px;
-
-        }
-        .button .icon {
-            display: inline-block;
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            border-radius: 50px;
-            transition: all 0.3s ease-in-out;
-        }
-        .button .icon i {
-            font-size: 20px;
-            line-height: 40px;
-        }
-        .button .hover i {
-            color: white;
-            transition: all 0.3s ease-in-out;
-        }
+    .button {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 10px 10px  rgba(0,0,0,0.1);
+        float: left;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .button span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-left: 10px;
+    }
+    
+    .button:hover {
+        width: 100px;
+    }
+    
+    
+    .button:nth-child(1):hover .icon{ background: #4267B2;}
+    .button:nth-child(2):hover .icon{ background: #e1306c;}
+    .button:nth-child(3):hover .icon{ background: #4b7de1;}
+    .button:nth-child(4):hover .icon{ background: #6e5494;}
+    
+    .button:nth-child(1) span {color:#4267B2;}
+    .button:nth-child(2) span { color: #e1306c;}
+    .button:nth-child(3) span { color: #4b7de1;}
+    .button:nth-child(4) span { color: #6e5494;}
+    
+    .button  {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-left: 10px;
+    
+    }
+    
+    .button .icon {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .button .icon i {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .button.hover i {
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+                
   
   /*horizontal border elements (top & bottom)*/
   .fancy-card .v-border{
