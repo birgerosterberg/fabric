@@ -19,26 +19,7 @@ li :hover {
     color: #5585B5;
 }
 
-
-/*_______________OLD CSS FOR NAVBAR______________
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.nav__links {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}_________________________*/
-
-
-/*______________Styling for cards______________*/
+/*______________Styling for SIMPLE cards______________*/
 img {
     width: 131px;
     height: 131px;
@@ -89,82 +70,39 @@ h3 {
             font-weight: 400;
         }
 
-/*CODE SNIPETS CSS ANIMATIONS*/
 
-/*think this is the relavent code for button icon animations*/
-
-.button {
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 10px 10px  rgba(0,0,0,0.1);
-    float: left;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-    .button span {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 40px;
-        margin-left: 10px;
-    }
-
-    .button:hover {
-        width: 100px;
-    }
-
-    .button:nth-child(1):hover .icon{ background: #4267B2;}
-    .button:nth-child(2):hover .icon{ background: #e1306c;}
-    .button:nth-child(3):hover .icon{ background: #4b7de1;}
-    .button:nth-child(4):hover .icon{ background: #6e5494;}
-
-    .button:nth-child(1) span {color:#4267B2;}
-    .button:nth-child(2) span { color: #e1306c;}
-    .button:nth-child(3) span { color: #4b7de1;}
-    .button:nth-child(4) span { color: #6e5494;}
-
-    .button  {
-        font-family: 'K2D', sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 40px;
-        margin-left: 10px;
-
-    }
-    .button .icon {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-    }
-    .button .icon i {
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .button .hover i {
-        color: white;
-        transition: all 0.3s ease-in-out;
-    }
-
-/*______________________________CARD FLIPPER____________________________*/
+/*______________________________FULL PAGE STYLES: some important for cards____________________________*/
 
 
 
   h1,h2,h3,h4,h5,h6{
     font-family: 'K2D', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 0.25px;
   }
-  
+
+  .discover__btn {
+    color: white;
+    background: #6CB8E3;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+    &:active {
+        scale: 0.9;
+    }
+  }
 
   .wrapper{
     padding: 5px 5px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .row{
     max-width: 1440px;
@@ -199,9 +137,9 @@ h3 {
     line-height: 150%;
   }
   
-  /*fancy card styling*/
+  /*______________________FLIPPING CARD STYLES__________________________*/
   .fancy-card{
-    background: rgb(158, 203, 255);
+    background: #6CB8E3;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -275,171 +213,120 @@ h3 {
   }*/
 
 
-    /*think this is the relavent code for button icon animations*/
+/*_________________________BUTTON ICON ANIMATIONS (simple)______________________*/
 
-    .wrapperbutton {
-        display: flex;
-        justify-content: center;
-    }
+.fa {
+  font-size: 1.2rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  background-color: rgb(251, 242, 245);
+  border-radius: 2.3rem;
+  border: 1px solid #4078c0;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 200ms ease-in-out;
+}
 
-    .button {
-        height: 40px;
-        width: 40px;
-        background-color: white;
-        border-radius: 50px;
-        cursor: pointer;
-        box-shadow: 0 10px 10px  rgba(0,0,0,0.1);
-        float: left;
-        overflow: hidden;
+.fa:hover {
+  color: #4078c0;
+  border: 0.2rem solid#5585b5;
+  opacity: 1;
+}
 
-        transition: all 0.3s ease-in-out;
-    }
+.fa-linkedin {
+  color: #00a0dc;
+}
+.fa-github {
+  color: #4078c0;
+}
+.fa-codepen {
+  color: black;
+}
+
+/*_________________________BUTTON ICON ANIMATIONS OLD______________________
+
+.wrapperbutton {
+  display: flex;
+  justify-content: center;
+  }
+
+.button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px  rgba(0,0,0,0.1);
+  float: left;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  }
     
-    .button span {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 40px;
-        margin-left: 10px;
-    }
+.button span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  }
     
-    .button:hover {
-        width: 100px;
-    }
+.button:hover {
+  width: 100px;
+  }
     
     
-    .button:nth-child(1):hover .icon{ background: #4267B2;}
-    .button:nth-child(2):hover .icon{ background: #e1306c;}
-    .button:nth-child(3):hover .icon{ background: #4b7de1;}
-    .button:nth-child(4):hover .icon{ background: #6e5494;}
+.button:nth-child(1):hover .icon{ background: #4267B2;}
+.button:nth-child(2):hover .icon{ background: #e1306c;}
+.button:nth-child(3):hover .icon{ background: #4b7de1;}
+.button:nth-child(4):hover .icon{ background: #6e5494;}
     
-    .button:nth-child(1) span {color:#4267B2;}
-    .button:nth-child(2) span { color: #e1306c;}
-    .button:nth-child(3) span { color: #4b7de1;}
-    .button:nth-child(4) span { color: #6e5494;}
+.button:nth-child(1) span {color:#4267B2;}
+.button:nth-child(2) span { color: #e1306c;}
+.button:nth-child(3) span { color: #4b7de1;}
+.button:nth-child(4) span { color: #6e5494;}
     
-    .button--styles {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 40px;
-        margin-left: 10px;
+.button--styles {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  }
     
-    }
+.button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  }
     
-    .button .icon {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-    }
+.button .icon i {
+  color: black;
+  font-size: 20px;
+  line-height: 40px;
+  }
     
-    .button .icon i {
-        color: black;
-        font-size: 20px;
-        line-height: 40px;
-    }
-    
-    .button.hover i {
-        color: white;
-        transition: all 0.3s ease-in-out;
-    }
-                
+.button.hover i {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  }
+           
+*/
   
-  /*horizontal border elements (top & bottom)
-  .fancy-card .v-border{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-  }
-  .fancy-card .v-border:before,
-  .fancy-card .v-border:after{
-    width: 0%;
-    height: 1px;
-    left: 50%;
-    transition: all 250ms ease-out;
-    background: #fff;
-  }
-  .fancy-card .v-border:before{
-    content: '';
-    top: 10%;
-    position: absolute;
-  }
-  .fancy-card .v-border:after{
-    content: '';
-    bottom: 10%;
-    position: absolute;
-  }
-  
-  /*horizontal border elements (left & right)
-
-
-  .fancy-card .h-border{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-  }
-  .fancy-card .h-border:before,
-  .fancy-card .h-border:after{
-    height: 0%;
-    top: 50%;
-    width: 1px;
-    transition: all 250ms ease-out;
-    background: #fff;
-  }
-  .fancy-card .h-border:before{
-    content: '';
-    left: 10%;
-    height: 0%;
-    position: absolute;
-  }
-  .fancy-card .h-border:after{
-    content: '';
-    right: 10%;
-    position: absolute;
-  }
-  
-  
-  
-  /*hover states for interactivity
-  .fancy-card:active .v-border:before,
-  .fancy-card:active .v-border:after,
-  .fancy-card:hover .v-border:before,
-  .fancy-card:hover .v-border:after{
-    width: 90%;
-    left: 5%;
-  }
-  .fancy-card:active .h-border:before,
-  .fancy-card:active .h-border:after,
-  .fancy-card:hover .h-border:before,
-  .fancy-card:hover .h-border:after{
-    height: 90%;
-    top: 5%;
-  }
-  */
-  
-
-
-
-
-
-  /*hovering over card, shadow effect*/
+/*______________________CARD HOVER STYLES________________________*/  
+/*hovering over card, shadow effect*/
   .fancy-card:active,
   .fancy-card:hover{
     box-shadow: 10px 10px 0px 0px rgba(150, 183, 194, 0.381);
   }
-  /*hovering over card, adjust primary element*/
+/*hovering over card, adjust first side*/
   .fancy-card:active .content .primary,
   .fancy-card:hover .content .primary{
     opacity: 0;
     transform: translate3d(0px, 20px, 1px);
     transition: all 200ms linear 0ms;
   }
-  /*hoverijng over card, adjust secondary element*/
+/*hoverijng over card, adjust second side*/
   .fancy-card:active .content .secondary,
   .fancy-card:hover .content .secondary{
     opacity: 1;
@@ -447,7 +334,7 @@ h3 {
     transition: all 200ms linear 200ms;
   }
   
-  /*hovering over card, adjust background overlay*/
+/*hovering over card, adjust background overlay*/
   .fancy-card:active .bg-overlay,
   .fancy-card:hover .bg-overlay{
     background: rgba(252, 254, 255, 0.442);
@@ -455,9 +342,7 @@ h3 {
   
 
 
-
-
-
+/*________________________________MAEDIA QUERY: CARDS______________________________*/
 
   /*medium and large profiles*/
   @media screen and (min-width: 768px){
@@ -470,6 +355,36 @@ h3 {
   }
 
 
+  /*__________________________NAVBAR EDITS BIRGER__________________________________*/
+
+  #navbar-landing {
+    position: absolute;
+    height: 83px;
+  }
+  #navbar-landing nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6705882353)), to(rgba(255, 255, 255, 0.6705882353)));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6705882353), rgba(255, 255, 255, 0.6705882353));
+  }
+  
+    /*__________________________FOOTER EDITS BIRGER__________________________________*/
+  #footer-landing {
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0px;
+    height: 78px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4D4AD6), to(#4D4AD6));
+    background-image: linear-gradient(#4D4AD6, #4D4AD6);
+    color: #FFFFFF;
+  }
+  #footer-landing .logo {
+    width: 130px;
+    height: auto;
+  }
 
 
 
