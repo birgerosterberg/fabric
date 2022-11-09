@@ -5,19 +5,19 @@
 body {
   background-color: #bbe4e9;
   font-size: 1rem;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1000px;
 }
 .profile-big-container {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  padding: 2rem;
 }
 .profile-wrapper {
   background-color: #d7e1ec;
