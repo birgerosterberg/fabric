@@ -40,6 +40,7 @@ nav ul {
     margin: 0;
     float: right;
     margin-right: 150px;
+    z-index: 1;
 }
 
 nav ul li {
@@ -63,6 +64,7 @@ nav ul li a {
 
     &:hover{
         background-color: #82a5ac;
+        color: #000000;
     }
 
     &:active {
@@ -99,6 +101,7 @@ footer {
     background: #bbe4e9;
     box-shadow: rgb(187, 228, 233);
     border-top: 1px solid #adadad;
+    
 }
 
 footer ul {
@@ -129,6 +132,7 @@ footer ul li a {
 
     &:hover{
         background: #82a5ac;
+        color: #000000;
     }
 
     &:active {
@@ -140,6 +144,7 @@ footer ul ul {
     position: absolute;
     top: 60px;
     display: none;
+    
 }
 
 footer ul ul li {
