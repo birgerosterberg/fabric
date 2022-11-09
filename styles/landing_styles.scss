@@ -7,7 +7,7 @@
 body {
     margin: auto;
     // Making sure it takes up around 50 / 50 of the background 
-    background: linear-gradient(180deg, #Ffffff 50%, #4D4AD6 50%);
+    background: linear-gradient(180deg, #Ffffff 45%, #4D4AD6 45%);
     font-family: 'K2D', sans-serif;
 }
 //Navbar extra changes put it as ID since it has to have higher hierachy then the class navbar.
@@ -92,7 +92,7 @@ body {
     }
 
     .discover__my__place {
-        grid-area: 11 / 2 / 12 / 4 ;
+        grid-area: 10 / 2 / 11 / 4 ;
 
     }
 
