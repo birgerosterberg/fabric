@@ -10,8 +10,8 @@ body {
 
 /*______________Styling for SIMPLE cards______________*/
 img {
-  width: 131px;
-  height: 131px;
+  width: 140px;
+  height: auto;
 }
 
 h3 {
@@ -21,10 +21,11 @@ h3 {
 
 .main-container {
   display: flex;
+  align-items: center;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  margin: 20px;
+
 }
 
       .card1 {
@@ -91,11 +92,13 @@ border-radius: 8px;
 .wrapper{
 padding: 5px 5px;
 padding-top: 50px;
+width: 100%;
+display: flex;
 }
 .row{
-max-width: 1440px;
 width: 100%;
 margin: 5px;
+justify-self: center;
 }
 
 *,*:before,*:after{
