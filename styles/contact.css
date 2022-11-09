@@ -6,7 +6,6 @@ body {
   font-family: "K2D", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #Ffffff), color-stop(50%, #4D4AD6));
   background: linear-gradient(180deg, #Ffffff 50%, #4D4AD6 50%);
-  list-style-type: none;
 }
 
 .container-form {
@@ -22,7 +21,7 @@ body {
   margin: 50px;
   padding: 50px;
   width: 100%;
-  height: 100%;
+  height: 999px;
 }
 
 .form-area {
