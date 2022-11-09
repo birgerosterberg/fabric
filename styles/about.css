@@ -8,8 +8,8 @@ body {
 
 /*______________Styling for SIMPLE cards______________*/
 img {
-  width: 131px;
-  height: 131px;
+  width: 140px;
+  height: auto;
 }
 
 h3 {
@@ -21,16 +21,16 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px;
 }
 
 .card1 {
@@ -105,12 +105,17 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   padding: 5px 5px;
   padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .row {
-  max-width: 1440px;
   width: 100%;
   margin: 5px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 *, *:before, *:after {
