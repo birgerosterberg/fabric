@@ -2,8 +2,11 @@
 * {
   box-sizing: border-box;
 }
-.profile-big-container {
+body {
   background-color: #bbe4e9;
+  font-size: 1rem;
+}
+.profile-big-container {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
   width: 100vw;
@@ -14,6 +17,7 @@
   justify-content: center;
   align-items: center;
   color: black;
+  padding: 2rem;
 }
 .profile-wrapper {
   background-color: #d7e1ec;
@@ -36,6 +40,11 @@ h2 {
   font-family: "K2D", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 0;
+}
+p {
+  margin: 5px;
+  line-height: 1.7rem;
 }
 
 .line-through {
@@ -84,6 +93,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  margin-inline: 10%;
+
   .profile-container {
     display: flex;
   }
@@ -94,16 +105,20 @@ h2 {
   img {
     max-width: 12rem;
     height: auto;
+    display: block;
     border-radius: 5%;
     box-shadow: 5px #5585b5;
     // border: 0.2rem #5585b5;
+    margin: 0 auto;
   }
   .photo-contact-wrapper {
     width: 50%;
     padding: 1rem;
     text-align: center;
+    margin: 0;
     .photo {
       flex-wrap: wrap;
+      margin: 0 auto;
     }
     .profile-contact {
       flex-wrap: wrap;
@@ -124,7 +139,7 @@ h2 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .profile-wrapper {
     height: 100%;
     width: 100%;
@@ -139,6 +154,15 @@ h2 {
     p {
       line-height: normal;
     }
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .caps {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14px;
   }
 }
 @import "footer.scss";
