@@ -9,9 +9,6 @@ body {
   background-color: #bbe4e9;
   font-size: 1rem;
   padding: 2rem;
-  width: 100vw;
-  height: 100vh;
-  max-width: 1000px;
 }
 
 .profile-big-container {
@@ -28,6 +25,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: black;
+  margin-top: 50px;
 }
 
 .profile-wrapper {
@@ -114,6 +112,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -132,6 +132,8 @@ p {
 .profile-wrapper .profile-text {
   padding: 1rem;
   text-align: justify;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .profile-wrapper img {
   max-width: 12rem;
