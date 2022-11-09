@@ -8,16 +8,6 @@ body {
   font-family: "K2D", sans-serif;
 }
 
-ul, li {
-  list-style: none;
-  list-style-type: none;
-  padding: 10px;
-}
-
-li :hover {
-  color: #5585B5;
-}
-
 /*______________Styling for SIMPLE cards______________*/
 img {
   width: 131px;

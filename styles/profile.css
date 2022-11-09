@@ -1,26 +1,33 @@
 @import "navbar.css";
 @import "footer.css";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: #bbe4e9;
   font-size: 1rem;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1000px;
 }
 
 .profile-big-container {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  max-width: 1000px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
-  padding: 2rem;
 }
 
 .profile-wrapper {
@@ -79,6 +86,7 @@ p {
   border: 1px solid #4078c0;
   cursor: pointer;
   padding: 0.5rem;
+  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
@@ -103,13 +111,22 @@ p {
 .profile-wrapper {
   height: 70%;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   margin-inline: 10%;
 }
 .profile-wrapper .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .profile-wrapper .profile-text {
@@ -121,7 +138,8 @@ p {
   height: auto;
   display: block;
   border-radius: 5%;
-  box-shadow: 5px #5585b5;
+  -webkit-box-shadow: 5px #5585b5;
+          box-shadow: 5px #5585b5;
   margin: 0 auto;
 }
 .profile-wrapper .photo-contact-wrapper {
@@ -131,11 +149,13 @@ p {
   margin: 0;
 }
 .profile-wrapper .photo-contact-wrapper .photo {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
 }
 .profile-wrapper .photo-contact-wrapper .profile-contact {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .profile-wrapper p {
   line-height: 1.5em;
@@ -144,7 +164,8 @@ p {
   width: 50%;
   margin-right: auto;
   padding: 2rem;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: 0;
   border: 1px solid #00a0dc;
   text-align: start;
@@ -173,4 +194,4 @@ p {
   p {
     font-size: 14px;
   }
-}/*# sourceMappingURL=profile.css.map */
+}
