@@ -1,5 +1,4 @@
-@import url(/styles/navbar.css);
-
+@import url(navbar.css);
 
 body {
   margin: 0;
@@ -16,6 +15,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 50px;
+  height: 990px;
 }
 
 .search-bar {
