@@ -139,6 +139,7 @@ h2 {
 p {
   margin: 5px;
   line-height: 1.7rem;
+  font-size: 14px;
 }
 
 .line-through {
@@ -224,7 +225,7 @@ p {
   flex-wrap: wrap;
 }
 .profile-wrapper p {
-  line-height: 2em;
+  line-height: 1.5em;
 }
 .profile-wrapper .text {
   width: 50%;
